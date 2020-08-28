@@ -2,7 +2,7 @@
 An Instagram clone built for fun, and then used to satisfy course requirement in CSE 204: Web Development and CSE 503S: Rapid Prototype Development (Graduate Level) at Washington University in St. Louis. To avoid copyright infringement or plagiarism, I have kept these two project separate. 
 
 ## Visual Clone
-The ![visual component](./visual clone (css)/) of InstaDan was built as a challenge of my CSS knowledge, and was built in vanilla HTML and CSS. All 'Uploaded' photos are my own, all user profile images belong to their respective users. 
+The [visual component](./visual clone (css)/) of InstaDan was built as a challenge of my CSS knowledge, and was built in vanilla HTML and CSS. All 'Uploaded' photos are my own, all user profile images belong to their respective users. 
 
 ![Visual Clone Example:](insta.gif)
 
