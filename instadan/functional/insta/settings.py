@@ -1,7 +1,7 @@
 import os
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-SECRET_KEY = 'wo!x%rt%vcdr6z&(&td_sy&3@or%7=g1m7gi6_9zfk$&a26!1@'
+SECRET_KEY = '' #insert secret key here
 DEBUG = True
 ALLOWED_HOSTS = []
 
@@ -48,11 +48,11 @@ WSGI_APPLICATION = 'insta.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'instadan_db',
-        'USER': 'instadan_user',
-        'PASSWORD': 'saunaboys',
+        'NAME': '', #TODO: Insert Name Here
+        'USER': '', #TODO: Insert User Here
+        'PASSWORD': '', #TODO: Insert Password Here
         'HOST': '',
-        'PORT': '5432',
+        'PORT': '', #TODO: Insert Port Here
     }
 }
 
