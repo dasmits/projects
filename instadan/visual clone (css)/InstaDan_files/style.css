@@ -1,0 +1,497 @@
+* {
+  scrollbar-width: thin;
+  scrollbar-color: blue rgba(185,185,185,.85);
+}
+
+*::-webkit-scrollbar {
+  width: 12px;
+}
+*::-webkit-scrollbar-track {
+  background: #FAFAFA;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: rgba(185,185,185,.85);
+  border-radius: 45px;
+  border: 3px solid #FAFAFA;
+}
+
+body{
+    background-color: #FAFAFA;
+    font-family: sans-serif;
+    overflow-x: hidden;
+}
+
+body *{
+    color: #262626;
+}
+
+
+#topbar{
+    background-color: #FFFFFF;
+    position: fixed;
+    z-index: 100;
+    top:0;
+    left: 0;
+    width: 100vw;
+    height: 70px;
+    margin: 0;
+    border-bottom: 1px solid #E6E6E6;
+    transition: 0.3s;
+    
+}
+
+#topBarContent{
+    width: 100vw;
+    height: inherit;
+}
+
+#placeholder{
+    height: 110px;
+}
+
+#topBarInstaLogo{
+   transition: .25s;
+    height: 24px;
+    width: 24px;
+    position: absolute;
+    /* this position is only for the tablet view */
+    left: 40px;
+    top: 50%;
+    transform: translate(0, -50%);
+
+}
+
+#seperateBar{
+    transition: 0.25s;
+    background-color: #262626;
+    width: 1px;
+    height: 30px;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    left: 80px;
+}
+
+#topBarInstaText{
+    transition: 0.25s;
+    height: 40px;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    left: 92px;
+}
+
+#upperSearchBar{
+    border: 1px solid #E6E6E6;
+    border-radius: 4px;
+    background-color: #FAFAFA;
+    height: 25px;
+    width: 200px;
+    
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;    
+}
+
+
+#upperSearchBar:focus{
+    background-color: #FFFFFF;
+    outline: none;
+}
+
+#topRightIcons{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translate(0, -50%);
+    
+}
+
+#topRightIcons img{
+    height: 22px;
+    margin-right: 22px;
+}
+
+#mainContent{
+    //background-color: red;
+    margin: 0 auto;
+    position: relative;
+    width: 940px;
+    /*THIS IS GOING TO CAUSE PROBLEMS FOR MOBILE VIEW*/
+    height: 500px;
+}
+
+
+#rightBar{
+    
+    position: fixed;
+    left: 67%;
+    top: 100px;
+    
+    
+    
+    /*
+    position: absolute;
+    right:0;
+   
+    position: fixed;
+    left: 750px;
+    position: sticky;
+    top:0px;
+    */
+
+    width: 300px;
+    height: 550px;
+}
+
+#rightBarProfile{
+    width: 100%;
+    height: 55px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #E6E6E6;
+}
+
+.rightBarPic{
+    margin-left: 2px;
+    height: 55px;
+    //border: 3px solid #C0286A;
+    box-shadow: 0px 00px 0px 3px #bc2a8d; 
+    border-radius: 100%;
+    float: left;
+    margin-right: 15px;
+}
+
+.userName{
+    letter-spacing: 0.1px;
+    font-weight: 600;
+    padding-top: 8px;
+    color: #262626;
+    font-size: 13px;
+}
+
+#fullName{
+    letter-spacing: 0.1px;
+    color: #999999;
+    padding-top: 3px;
+    font-size: 12px;
+}
+
+.rightBarSub{
+    color: #999999;
+    padding-top: 3px;
+    font-size: 11px;
+}
+
+#storiesTitle{
+    
+    padding-top: 12px;
+    color: #999999;
+    letter-spacing: 0.1px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.storyHolder{
+    margin-left:3px; 
+    margin-top: 10px;
+    margin-bottom: 30px;
+    clear: both;
+}
+
+.storyHolder *{
+    position: relative;
+    z-index: -1;
+}
+
+#subtext{
+    font-size: 11px;
+    color: #999999;
+    line-height: 18px;
+    margin-top: 20px;
+}
+
+#subtext a{
+    text-decoration: none;
+    color: inherit;
+}
+
+
+#stories{
+    overflow-y: scroll;
+    height: 330px;
+    box-shadow: inset 0px -30px 22px #FAFAFA;  
+    z-index: 1;
+    border-bottom: 1px solid #E6E6E6;
+}
+
+#stories a, #stories a:hover, #stories a:focus, #stories a:active{
+    text-decoration: none;
+}
+
+
+.post{
+    background-color: #FFFFFF;
+    border: 1px solid #E6E6E6;
+    border-radius: 5px;
+    height: auto;
+    width: 600px;
+    margin-bottom: 55px;
+}
+
+.postHeader{
+    height: 65px;
+    width: 100%;
+    //position: relative;
+    //display: inline-block;
+    /* How to account for this in height?*/
+}
+
+.postHeader img{
+    height: 40px;
+    border-radius: 100%;
+    margin-left: 12px;
+    margin-top: 12px;
+    margin-right: 8px;
+    float: left;
+}
+
+.postImg{
+    position: relative;
+    width: 100%;
+    height: 900px;
+    height: auto;
+    display: block;
+}
+
+.posterUserName{
+    position: relative;
+    top: 18px;
+    left:5px;
+    
+    //padding-top: 25px
+}
+
+.subPic{
+    padding-left: 15px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #E6E6E6;
+}
+
+.subPicIcons{
+    margin-bottom: 5px;
+}
+
+.subPicIcons img{
+    margin-top: 8px;
+    height: 25px;
+}
+
+.subPicIcons:first-child img{
+    margin-right: 12px;
+}
+.subPicIcons > img+img+img{
+    float: right;
+}
+
+.likes{
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.caption, .comment{
+    color: #262626;
+
+    font-size: 14px;
+    margin-bottom: 5px;
+
+}
+
+.captioner, .commenter{
+    color: #262626;
+    font-weight: bold;
+}
+
+.timestamp{
+    margin-top: 10px;
+    color: #999999;
+    font-size: 10px;
+}
+
+.commentBox{
+    border: none;
+    outline: none;
+    font-size: 14px;
+    margin-left: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 525px;
+}
+
+input~span{
+    font-size: 21px;
+    font-weight: bold;
+    margin-right: 15px;
+    margin-top: 3px;
+    float: right;
+    color: #262626;
+}
+
+.suggestions{
+    background-color: #FFFFFF;
+    border: 1px solid #E6E6E6;
+    height: auto;
+    width: 600px;
+    margin-bottom: 55px;
+   
+}
+
+.suggestionsTitle{
+    margin: 15px;
+    color: #999999;
+}
+
+.suggContainer{
+    white-space: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+.sugg{
+    height: 175px;
+    width: 150px;
+    border: 1px solid #E6E6E6;
+    position: relative;
+    display: inline-block;
+    margin-left: 30px;
+    margin-bottom: 10px;
+    
+}
+
+.sugg img{
+    height: 55px;
+    border-radius: 100%;
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.suggName{
+    position: relative; 
+    margin-top: 75px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.suggTitle{
+    text-align: center;
+    color: #999999;
+    font-size: 12px;
+}
+
+.sugg button{
+    outline: none;
+    border: 1px solid #3897F0;
+    border-radius: 5px;
+    background-color: #3897F0;
+    color: #FAFAFA;
+    height: 30px;
+    width: 110px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 25px;
+    
+}
+
+
+
+@media screen and (min-width: 1000px){
+    #topbar{
+        //background-color: black;
+    }
+    #topBarContent{
+        max-width: 1000px;
+        position: relative;
+        margin: 0 auto;
+        //background-color: red;
+        
+    }
+    
+    
+    #topBarInstaLogo{
+        position: relative;
+        top: 35px;
+        /* this position is only for the tablet view 
+        //left: 40px;
+        //top: 50%;
+        //transform: translate(0, -50%);
+        */
+
+    }
+
+    #seperateBar{
+        position: relative;
+        top: 9.5px;
+    }
+
+    #topBarInstaText{
+        position: relative;
+        top: -22px;
+    }
+
+
+    #topRightIcons{
+        position: absolute;
+    }
+    
+   
+}
+
+@media screen and (max-width: 1000px){
+    #rightBar *{
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: none;
+        visibility: hidden;
+        width: 0px;
+    }
+    
+    #mainContent{
+        //background-color: red;
+        width: 99vw;
+    }
+    
+    #scrollable{
+        //background-color: blue;
+        width: 99vw;
+        height: 1500px;
+    }
+    
+    .post{
+        position: relative;
+        margin: 0 auto;
+        margin-bottom: 55px;
+    }
+    
+    .suggestions{
+        position: relative;
+        margin: 0 auto;
+        margin-bottom: 55px;
+    }
+    }
+    
+}
+
+
+
+
+::-webkit-scrollbar {
+    display: none;
+}
+

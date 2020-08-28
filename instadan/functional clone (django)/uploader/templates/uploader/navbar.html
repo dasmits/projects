@@ -1,0 +1,7 @@
+
+{%if request.user.is_authenticated%}
+<div id="navbar">
+    <a href="{% url 'insta:index' is_priv=1 %}" class="aButton">My Feed</a>
+    <a href="{% url 'insta:index' %}" class="aButton">Global</a>
+</div>
+{%endif%}

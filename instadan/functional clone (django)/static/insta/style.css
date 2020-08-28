@@ -1,0 +1,405 @@
+body{
+    background-color: #fafafa;
+}
+body *{
+    font-family: sans-serif;
+    color: #262626;
+}
+
+#headbar{
+    background-color: white;
+    position: fixed;
+    z-index: 100;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    margin: 0;
+    border-bottom: 1px solid #E6E6E6;
+}
+
+
+#spacer{
+    height: 80px;
+}
+
+#logodiv{
+    height: 100%;
+    width: 70px;
+    /* background-color: grey; */
+    position: absolute;
+    left:0;
+    top:0;
+}
+
+#welcome{
+    margin-bottom: 10px;
+}
+
+#logo{
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 50px;
+    width: 50px;
+}
+
+#pictr{
+    color: #eb5357;
+    font-weight: bold;
+    font-size: 25px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+#searchdiv{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#searchdiv input{
+    outline: none;
+}
+
+#search{
+    width: 150px;
+    height: 1.5em;
+    border: 1.5px solid #E6E6E6;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#search +input{
+    background: none;
+    border: 1.5px solid #E6E6E6;
+    border-radius: 100%;
+    width: 1.5em;
+    height: 1.5em;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+input:hover, input:focus, input:active{
+    border-color: #acacac;
+}
+
+#userdiv{
+    position: absolute;
+    right: 0;
+    top:0;
+    width: 200px;
+    height: 100%;
+    text-align: right;
+    padding: 10px;
+}
+
+#userdiv img{
+    float: right;
+}
+
+.aButton, button{
+    margin: 5px;
+    padding: 5px;
+    outline: none;
+    border: 2px solid #eb5357;
+    background: none;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+button:hover, .aButton:hover{
+    background-color: #eb5357;
+    color: #fafafa;
+}
+
+.button1{
+    background-color: #eb5357;
+    color: #ffe06a;
+}
+
+.button2{
+    border-color: #ffe06a;
+    background-color: #ffe06a;
+    color: #eb5357;
+}
+
+.button1:hover, .button2:hover{
+    background: none;
+    color: #262626;
+}
+
+#uploadForm{
+    width: 500px;
+    height: 150px;
+    padding: 10px;
+    margin: 10px auto;
+    
+    position: relative;
+    background-color:white;
+    border: 1.5px solid #acacac;
+    border-radius: 10px;
+}
+
+#caption{
+    width: 200px;
+    height: 75px;
+    display: block;
+    margin: 10px;
+    padding: 5px;
+    resize: none;
+}
+#tags{
+    margin: 10px;
+    padding: 5px;
+    display: block;
+    width: 300px;
+}
+#uploadLabel{
+    padding-right: 10px;
+    text-align: right;
+    position: absolute;
+    right: 0;
+    top: 40px;
+}
+#uploadInput{
+    position: absolute;
+    right: 0;
+    top: 60px;
+}
+
+#uploadForm button{
+    position: absolute;
+    right: 50px;
+    bottom: 10px;
+    height: 50px;
+    width: 70px;
+    font-size: 20px;
+}
+
+.post{
+    width: 500px;
+    background-color: white;
+    border: 1px solid #E6E6E6;
+    margin: 25px auto;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+.view{
+    width: 800px;
+}
+
+.searchwrap{
+    height: 75px;
+    width: 75px;
+    position: relative; 
+    overflow: hidden;
+}
+
+.searchwrap img{
+   height: 75px;
+   min-width: 75px;
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%, -50%);
+   border: 1px solid #E6E6E6;
+}
+
+.searchdiv a{
+    float: left;
+    margin-right: 15px;
+}
+
+.searchdiv{
+    width: 80%;
+    height: 75px;
+    margin: 10px auto;
+    border: 1px solid #E6E6E6;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    padding:0;
+    background-color: white;
+}
+
+.user{
+    padding: 10px;
+    width: 50%;
+    height: 40px;
+}
+
+.post img, .view img{
+    width: 100%;
+}
+
+.searchdiv .tags{
+    position: absolute;
+    width: 40%;
+    bottom: 0;
+    right: 0;
+    margin: 0;
+    border-left: 1px solid #E6E6E6;
+    border-top: 1px solid #E6E6E6;
+    border-radius: 10px;
+    background-color: white;
+    padding: 5px;
+}
+
+.postButtons{
+    float: right;
+    color: #acacac;
+}
+
+.postCaption{
+    margin: 10px;
+}
+.postCaptionUser{
+    color: #eb5357;
+    font-weight: bold;
+}
+
+
+.tags{
+    margin:10px;
+}
+
+.tag{
+    display: inline;
+    padding: 5px;
+    margin: 2px;
+    background-color: #ffe06a;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+#predict{
+    background-color: #ffe06a;
+    padding: 5px;
+    color: #eb5357;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 100%;
+}
+
+#predict:hover, #predict:active, #predict:focus{
+    background-color: #eb5357;
+    color: #ffe06a;
+}
+
+#tileGrid{
+    width: 800px;
+    padding: none;
+    position: relative;
+    margin: 0 auto;
+}
+
+.tile{
+    width: 200px;
+    height: 200px;
+    float: left;
+    overflow: hidden;
+    position: relative;
+}
+
+.tile img{
+    transition-property: all;
+    transition-duration: .3s;
+    transition-delay: 0s;
+    height: 100%;
+    min-width: 100%;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+
+.tile img:hover{
+    opacity: .7;
+}
+
+.tile:hover img{
+    height: 110%;
+}
+
+#userDiv{
+    width: 801px;
+    margin: 0 auto;
+    position: relative
+}
+a{
+    text-decoration: none;
+}
+
+.comment{
+    margin: 10px 15px;
+}
+
+.commentTime{
+    color: #acacac;
+    font-size: 12px;
+}
+
+.commentContent{
+    /*???*/
+}
+
+#comment_text{
+    width: 500px;
+    height: 1.5em;
+    border: 1.5px solid #E6E6E6;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#comment_text + input{
+    width: 1.5em;
+    height: 1.5em;
+    font-weight: bold;
+    border:1px solid #262626;
+    border-radius: 100%;
+    background: none;
+    color: #eb5357;
+}
+
+#navbar{
+    position: relative;
+    margin: 0 auto;
+    padding: 0;
+    width: 150px;
+}
+
+#navbar a, #navbar button, #navbar .aButton{
+    border-radius: 0%; 
+    padding: 5px;
+    margin: 0px;
+}
+
+.pagination, .step-links{
+    margin: 15px auto;
+    width: 400px;
+    text-align: center;
+    position: relative;
+}
+
+.step-links *{
+    margin: 5px;
+}
+
+.current{
+    font-weight: bold;
+}
+
+.step-links a:hover{
+    color: #ffe06a;
+}
+
+.step-links a{
+    color: #eb5357;
+}

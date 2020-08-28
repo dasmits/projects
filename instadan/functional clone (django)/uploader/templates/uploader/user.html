@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+{%load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="{%static 'insta/style.css'%}">
+    <title>User - Pictr</title>
+</head>
+<body>
+    {%include 'uploader/headbar.html' %}
+    {%if request.user.is_authenticated%}
+        <div id="userDiv">
+            <h1 class="postCaptionUser">{{user}}</h1>
+            
+            {%if user != request.user%}
+                {%if is_followed%}
+                <a href="{%url 'uploader:unfollow' user.id 0%}" ><button>Unfollow</button></a>
+                {%else%}
+                <a href="{%url 'uploader:follow' user.id 0%}" ><button>Follow</button></a>
+                {%endif%}
+            {%endif%}
+            <div id="tileGrid"> 
+                {%for post in posts%}
+                <div class="tile">    
+                    <a href="{%url 'insta:view' post.id %}">   
+                        <img src="/media/{{post.id}}{{post.img_ext}}" alt="Image">
+                    </a>
+                </div>    
+                {%endfor%}
+            </div>
+        </div>
+        {%else%}
+        You must be a registered user to see the User view.
+    {%endif%}
+</body>
+</html>
+
+    

@@ -1,0 +1,10 @@
+{%if error %} <strong>{{error}}</strong>{%endif%}
+
+<form enctype="multipart/form-data" action="{%url 'uploader:to'%}" method="post" id="uploadForm">
+    {%csrf_token%}
+    <textarea required name="caption" id="caption" placeholder="Add caption here..."></textarea>  
+    <input type="text" id="tags" placeholder="Enter comma seperated tags here..." name="tags">
+    <label id="uploadLabel">Select image:<br></label>
+    <input id="uploadInput" required type="file" name="img" accept="image/*"> 
+    <button class="button1" type="submit">Post</button>
+</form>

@@ -1,0 +1,6 @@
+{% if img_path and img_id and randoText %}
+    {%load static%}
+    <p> {{randoText}}</p>
+    <img id="img{{img_id}}" src="{{img_path}}"> 
+
+{% endif %}

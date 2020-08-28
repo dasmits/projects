@@ -1,0 +1,31 @@
+{%load static%}
+<div id="headbar">
+   
+    <a href="{%url 'insta:index'%}">
+        <div id="logodiv">
+            <!-- Credit goes to SanityD on Dribble.com https://dribbble.com/shots/1741674-Camera-Icon -->
+            <img alt="Pictr Logo" id="logo" src="{%static 'insta/test_icons.png'%}"> 
+            <div id="pictr">pictr</div>
+        </div>
+    </a>
+
+    <div id="searchdiv">
+        <form action="/" method="GET">
+            
+            <input type="text" name="search" placeholder="Search by user or tag..." id="search">
+            <input type="submit" value="&#8981;">
+        </form>
+    </div>
+
+    <div id="userdiv">
+    {%if request.user.is_authenticated%}
+        <a href="/user/"><div id="welcome"> Welcome, <span class="postCaptionUser">{{request.user}}</span></div></a>
+        <a href="{%url 'insta:logout'%}" class="aButton button1" id="logout">Log Out</a>
+        
+    {%else%}
+        <a href="{%url 'insta:login'%}"class="aButton button2">Log In</a>
+        <a href="{%url 'insta:register'%}"class="aButton button1">Register</a>
+    {%endif%}
+    </div>
+</div>
+<div id="spacer"></div>

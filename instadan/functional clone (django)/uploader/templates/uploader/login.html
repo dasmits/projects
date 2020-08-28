@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+{%load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="{%static 'insta/style.css'%}">
+    <title>Log In - Pictr</title>
+</head>
+<body>
+    {%include 'uploader/headbar.html' %}
+    <h1> Login as an existing user: </h1>
+
+    <p>You must be registered and logged in to use advanced features. </p>
+
+    <p>Don't have an account yet? <a href="{%url 'insta:register'%}" class="aButton">Register here.</a></p>
+
+    <form action="{%url 'insta:login'%}" method="POST">
+        {%csrf_token%}
+        <label>Username:</label>
+        <input type="text" name="username">
+        <label>Password:</label>
+        <input type="password" name="password">
+        <input type="submit">
+    </form>
+
+</body>
+</html>
+
+    

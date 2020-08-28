@@ -1,0 +1,6 @@
+<div class="container">
+    {% for x in x|rjust:10 %}
+        {{forloop.counter}}
+        {%include "uploader/test.html" %}
+    {%endfor%}
+</div>

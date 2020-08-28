@@ -1,0 +1,15 @@
+<div class="searchdiv">
+    <a href="{%url 'insta:view' post.id %}">
+        <div class="searchwrap">        
+            <img class="postImg" alt="Post Image" src="/media/{{post.id}}{{post.img_ext}}">
+        </div>
+    </a>
+    <a href="{%url 'insta:user' post.user%}"><span class="postCaptionUser">{{post.user}}:</span></a>
+    <span class="postCaptionContent">{{post.caption}}</span>
+    
+    <div class="tags">
+        {%for tag in post.tags%}
+            <a class="tagLink" href="/search/{{tag}}"><div class="tag">{{tag}}</div></a>
+        {%endfor%}
+    </div> 
+</div>
