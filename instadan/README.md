@@ -2,7 +2,7 @@
 
 ## Visual Clone
 
-![Visual Clone Example:](myimage.png)
+![Visual Clone Example:](insta.gif)
 
 ## Functional Clone
 
