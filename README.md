@@ -1,5 +1,6 @@
 # Daniel Smits' Projects
-An assortment of projects in web development and machine learning.
+
+An assortment of projects in web development and machine learning; click on an image below to learn more. 
 
 <table border="0" background="none" style="background: none;">
  <tr>
