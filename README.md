@@ -11,7 +11,7 @@ An assortment of projects in web development and machine learning; click on an i
   <td>
      <b style="font-size:30px"><a href="ambiguity_rep/">Contextualized Ambiguity Representation</a></b>
      <br/>
-     Compared homonymy & polysemy in ELMo's embeddings; <br/> developed parallel corpora of natural and artificial contexts. 
+     Compared homonymy & polysemy in ELMo; <br/> developed corpora of natural and artificial contexts. 
      <br/>
      <a href="ambiguity_rep/"><img alt="Ambiguity tile" src="ambiguity_rep/plots/tile.png" width="400px" height="400px"/></a>
    </td>
