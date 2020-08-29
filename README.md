@@ -25,7 +25,7 @@ An assortment of projects in web development and machine learning; click on an i
  </tr>
  <tr>
   <td><b>Web Development</b></td>
-  <td><b>Data Visuaization</b></td>
+  <td><b>Data Visualization</b></td>
  </tr>
  <tr>
   <td>
