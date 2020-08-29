@@ -4,7 +4,7 @@ An assortment of projects in web development and machine learning; click on an i
 
 <table border="0" background="none" style="background: none;">
  <tr>
-  <td><b>Natural Language Processing</b></td><td></td>
+  <td><b>Natural Language Processing</b></td>
   <td><b>Computational Linguistics</b></td>
  </tr>
  <tr>
