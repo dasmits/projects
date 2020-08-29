@@ -8,4 +8,4 @@ Presented at [Brown Summer Research Symposium, 2020](https://repository.library.
 
 We investigate the underlying mechanisms of counterfactual reasoning, particularly the structures used to compute ad-hoc implicatures. This is the first report on a series of ongoing experiments to formalize how sets of alternatives are generated in iterative rationality models. 
 
-![What's the Alternative Poster](whats_the_alt_poster)
+![What's the Alternative Poster](whats_the_alt_poster.png)
