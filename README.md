@@ -15,7 +15,7 @@ An assortment of projects in web development and machine learning.
     <td><b style="font-size:30px"><a href="netflix_viz/">Interactive Netflix Data Visualizations</a></b></td>
  </tr>
  <tr>
-    <td><a href="ambiguity_rep/"><img alt="Ambiguity tile", src="ambiguity_rep/plots/tile.jpg" width="400px" height="400px"/></a></td>
-    <td><a href="netflix_viz/"><img alt="Netflix tile", src="netflix_viz/visualization/tile.png" width="400px" height="400px"/></a></td>
+    <td><a href="ambiguity_rep/"><img alt="Ambiguity tile" src="ambiguity_rep/plots/tile.png" width="400px" height="400px"/></a></td>
+    <td><a href="netflix_viz/"><img alt="Netflix tile" src="netflix_viz/data/tile.png" width="400px" height="400px"/></a></td>
  </tr>
 </table>
