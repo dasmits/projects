@@ -4,33 +4,42 @@ An assortment of projects in web development and machine learning; click on an i
 
 <table border="0" background="none" style="background: none;">
  <tr>
-   <td>
-     <b style="font-size:30px"><a href="instadan/">InstaDan: Visual and Functional Instagram Clone </a></b>
+  <td><b>Natural Language Processing</b></td><td></td>
+  <td><b>Computational Linguistics</b></td>
+ </tr>
+ <tr>
+  <td>
+     <b style="font-size:30px"><a href="ambiguity_rep/">Contextualized Ambiguity Representation</a></b>
      <br/>
-     Description of InstaDan
-    <br/>
-     <a href="instadan/"><img alt="InstaDan tile", src="instadan/visual/tile.jpg" width="400px" height="400px"/></a>
-  </td>
-    <td>
+     Compared homonymy & polysemy in ELMo's embeddings; <br/> developed parallel corpora of natural and artificial contexts. 
+     <br/>
+     <a href="ambiguity_rep/"><img alt="Ambiguity tile" src="ambiguity_rep/plots/tile.png" width="400px" height="400px"/></a>
+   </td>
+  <td>
      <b style="font-size:30px"><a href="rsa_alternatives/">What's the Alternative? Counterfactual Reasoning</a></b>
      <br/>
-     Description of RSA
+     Investigating ad-hoc implicatures with Turk. <br/> Modeling pragmatics with ELMo, BERT, GPT-2. 
      <br/>
      <a href="rsa_alternatives/"><img alt="Alternative tile", src="rsa_alternatives/expected/tile.jpg" width="400px" height="400px"/></a>
   </td>
  </tr>
-  <tr>
-    <td>
-     <b style="font-size:30px"><a href="ambiguity_rep/">Contextualized Ambiguity Representation</a></b>
+ <tr>
+
+  <td><b><Data Visuaization/b></td>
+  <td><b>Web Development</td></b></td>
+ </tr>
+ <tr>
+  <td>
+      <b style="font-size:30px"><a href="instadan/">InstaDan: Visual and Functional Instagram Clone </a></b>
+      <br/>
+      Built using Django, JavaScript, PostgreSQL, and TensorFlow. 
      <br/>
-     Description Ambiguity
-     <br/>
-     <a href="ambiguity_rep/"><img alt="Ambiguity tile" src="ambiguity_rep/plots/tile.png" width="400px" height="400px"/></a>
+      <a href="instadan/"><img alt="InstaDan tile", src="instadan/visual/tile.jpg" width="400px" height="400px"/></a>
    </td>
-    <td>
-     <b style="font-size:30px"><a href="netflix_viz/">Interactive Netflix Data Visualizations</a></b>
+   <td>
+     <b style="font-size:30px"><a href="netflix_viz/">Netflix Data Visualization Dashboard</a></b>
      <br/>
-     Description Netflix
+     Dynamic & interactive dashboard to visualize movie data.
      <br/>
      <a href="netflix_viz/"><img alt="Netflix tile" src="netflix_viz/data/tile.png" width="400px" height="400px"/></a>
    </td>
